@@ -16,11 +16,6 @@
 
     <br><br>
 
-    PostalCode : ${customer.postalCode}
-
-    <br><br>
-
-    Email : ${customer.email}
 
 </div>
 </body>
