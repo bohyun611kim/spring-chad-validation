@@ -1,6 +1,6 @@
-package com.kei890.validationtutorial.validation;
+package com.luv2code.springdemo.mvc.validation.validation;
 
-import com.kei890.validationtutorial.dto.MemberDto;
+import com.luv2code.springdemo.mvc.validation.dto.MemberDto;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;

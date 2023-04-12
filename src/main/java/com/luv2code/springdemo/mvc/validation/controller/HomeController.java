@@ -1,4 +1,4 @@
-package com.kei890.validationtutorial.controller;
+package com.luv2code.springdemo.mvc.validation.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

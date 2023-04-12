@@ -1,7 +1,7 @@
-package com.kei890.validationtutorial.controller;
+package com.luv2code.springdemo.mvc.validation.controller;
 
-import com.kei890.validationtutorial.dto.MemberDto;
-import com.kei890.validationtutorial.validation.MemberValidator;
+import com.luv2code.springdemo.mvc.validation.dto.MemberDto;
+import com.luv2code.springdemo.mvc.validation.validation.MemberValidator;
 import javax.validation.Valid;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,7 +9,6 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class MemberController {

@@ -1,4 +1,4 @@
-package com.kei890.validationtutorial.dto;
+package com.luv2code.springdemo.mvc.validation.dto;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;

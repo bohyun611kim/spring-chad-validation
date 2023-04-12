@@ -1,6 +1,6 @@
-package com.kei890.validationtutorial.controller;
+package com.luv2code.springdemo.mvc.validation.controller;
 
-import com.kei890.validationtutorial.dto.Customer;
+import com.luv2code.springdemo.mvc.validation.dto.Customer;
 import javax.validation.Valid;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;
