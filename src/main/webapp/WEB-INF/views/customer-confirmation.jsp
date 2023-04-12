@@ -20,6 +20,10 @@
 
     <br><br>
 
+    CourseCode: ${customer.courseCode}
+
+    <br><br>
+
 
 </div>
 </body>

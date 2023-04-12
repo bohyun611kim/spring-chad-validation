@@ -1,11 +1,11 @@
 package com.luv2code.springdemo.mvc.validation.dto;
 
+import com.luv2code.springdemo.mvc.validation.validation.CourseCode;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
-import org.springframework.web.bind.annotation.InitBinder;
 
 public class Customer {
 
@@ -22,6 +22,9 @@ public class Customer {
 
     @Pattern(regexp = "^[a-zA-Z0-9]{5}", message = "only 5 chars/digits")
     private String postalCode;
+
+    @CourseCode(value = "TOPS", message = "must start with TOPS")
+    private String courseCode;
 
 
     public String getFirstName() {
@@ -54,5 +57,13 @@ public class Customer {
 
     public void setPostalCode(String postalCode) {
         this.postalCode = postalCode;
+    }
+
+    public String getCourseCode() {
+        return courseCode;
+    }
+
+    public void setCourseCode(String courseCode) {
+        this.courseCode = courseCode;
     }
 }
