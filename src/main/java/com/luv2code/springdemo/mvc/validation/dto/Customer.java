@@ -5,6 +5,7 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
+import org.springframework.web.bind.annotation.InitBinder;
 
 public class Customer {
 
@@ -17,7 +18,7 @@ public class Customer {
     @NotNull(message = "is required")
     @Min(value = 0, message = "0 이상입니다")
     @Max(value = 10, message = "10 이하입니다.")
-    private int freePasses;
+    private Integer freePasses;
 
     @Pattern(regexp = "^[a-zA-Z0-9]{5}", message = "only 5 chars/digits")
     private String postalCode;
@@ -39,11 +40,11 @@ public class Customer {
         this.lastName = lastName;
     }
 
-    public int getFreePasses() {
+    public Integer getFreePasses() {
         return freePasses;
     }
 
-    public void setFreePasses(int freePasses) {
+    public void setFreePasses(Integer freePasses) {
         this.freePasses = freePasses;
     }
 
